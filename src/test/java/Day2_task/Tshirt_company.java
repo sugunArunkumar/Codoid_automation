@@ -3,48 +3,34 @@ package Day2_task;
 import java.util.Scanner;
 public class Tshirt_company {
 
-    int not;
+    int client_total_order;
     String size;
     String colour;
+    int pre_order;
 
     static {
-        System.out.println("Client ordered the tshirts");
+        System.out.println("Client already received the 50 small white t-shirts");
     }
-    Tshirt_company(int not,String size){
 
+    Tshirt_company(int pre_order) {
+        this.pre_order=pre_order;
         Scanner sc = new Scanner(System.in);
-        this.not=not;
-        this.size=size;
-        this.colour=colour;
-        System.out.println("Number of tshirts  " + not + " size "+ size);
-        System.out.println("client1 ordered 50 medium size White T-shirts");
-//        String tshirt =sc.nextLine();
-//        int value = Integer.valueOf(tshirt);
         int value = sc.nextInt();
-        System.out.println("client2 ordered " + value + " medium size Red T-shirts");
-    }
+            if ((pre_order + value < 101) && (!(client_total_order >101))) {
+                size = sc.next();
+                colour = sc.next();
 
-    public static void client3(){
-        Scanner sc = new Scanner(System.in);
-        String tshirt =sc.next();
-        int value = Integer.valueOf(tshirt);
-        String size = sc.nextLine();
-        System.out.println("client3 ordered " + value + size +" size Blue T-shirts");
+                System.out.println("Client need a " + value + " " + size + " size " + colour + " colour t-shirt");
+                client_total_order = pre_order + value;
+                System.out.println("client total order " + client_total_order);
+            } else {
+                System.out.println("client reach the maximum order");
+            }
 
-    }
-
-    public static void client4(){
-        Scanner sc = new Scanner(System.in);
-        String tshirt =sc.next();
-        int value = Integer.valueOf(tshirt);
-        System.out.println("client4 ordered " + value + " medium size Blue T-shirts");
-
-    }
+       }
 
     public static void main(String[] args) {
-        Tshirt_company tc = new Tshirt_company(100,"M");
-        Tshirt_company.client3();
-        Tshirt_company.client4();
+        Tshirt_company tc = new Tshirt_company(50);
 
     }
 
