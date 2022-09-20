@@ -1,0 +1,76 @@
+Class:
+  A class is a group of objects which have common properties. It is a template or blueprint from which objects are created.
+  It is a logical entity. It can't be physical.
+ 
+A class in Java can contain:
+
+  *Fields
+  *Methods
+  
+Super power:
+   -Without creating the class we can't able to create atleast a single variable.
+
+
+
+   
+Object:
+  An entity that has state and behavior is known as an object e.g., bike, marker, table, car, etc. It can be physical or logical (tangible and intangible).
+  The example of an intangible object is the banking system.
+ 
+An object has three characteristics:
+  State: represents the data (value) of an object.
+  
+  Behavior: represents the behavior (functionality) of an object such as deposit, withdraw, etc.
+  
+  Identity: An object identity is typically implemented via a unique ID. The value of the ID is not visible to the external user.
+  However, it is used internally by the JVM to identify each object uniquely.
+  
+Super power:
+  when the user creates the object,it will create constructor.Once we created object it automatically calls the constructor.
+
+
+
+
+  
+Constructor:
+ *In Java,a constructor is a block of codes similar to the method. It is called when an instance of the class is created.
+ *At the time of calling constructor, memory for the object is allocated in the memory.
+
+ *It is a special type of method which is used to initialize the object.
+
+ *Every time an object is created using the new() keyword, at least one constructor is called.
+ 
+Types of constructor:
+  1)Default constructor (no-arg constructor)
+  2)Parameterized constructor
+
+super power:
+ Once we created object then the constructor is created automatically.
+
+
+
+
+Static:
+
+  The static keyword in Java is used for memory management mainly. We can apply static keyword with variables, methods, blocks and nested classes.
+  The static keyword belongs to the class than an instance of the class.
+
+The static can be:
+
+  Variable (also known as a class variable)
+  Method (also known as a class method)
+  Block
+  Nested class
+
+super power:
+  User can able to call the class without creating the object.
+
+
+
+
+This keyword:
+  There can be a lot of usage of Java this keyword. In Java, this is a reference variable that refers to the current object.
+
+1) this: to refer current class instance variable
+ The this keyword can be used to refer current class instance variable.
+ If there is ambiguity between the instance variables and parameters, this keyword resolves the problem of ambiguity.
